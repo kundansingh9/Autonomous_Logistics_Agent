@@ -10,10 +10,12 @@ def create_research_agent():
     )
 
     return Agent(
-        role="Logistics Research Specialist",
-        goal="Research latest logistics and warehousing innovations",
-        backstory="Expert in AI, supply chain, and automation research.",
-        tools=[get_search_tool],
-        llm=llm,
-        verbose=True
-    )
+    role="Logistics Research Specialist",
+    goal="Research latest logistics and warehousing innovations",
+    backstory="Expert in AI, supply chain, and automation research.",
+    tools=[get_search_tool],
+    llm=llm,
+    verbose=True,
+    allow_delegation=False,
+    max_iter=3
+)
