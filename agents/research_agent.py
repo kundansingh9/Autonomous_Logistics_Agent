@@ -13,7 +13,7 @@ def create_research_agent():
     role="Logistics Research Specialist",
     goal="Research latest logistics and warehousing innovations",
     backstory="Expert in AI, supply chain, and automation research.",
-    tools=[get_search_tool],
+    # tools=[get_search_tool],
     llm=llm,
     verbose=True,
     allow_delegation=False,
